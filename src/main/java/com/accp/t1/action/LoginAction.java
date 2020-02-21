@@ -18,6 +18,8 @@ public class LoginAction {
 	public Map<String, String> loginIn(HttpSession session, String userName, Integer userPwd) {
 		Map<String, String> message = new HashMap<String, String>();
 		System.out.println("第一次修改");
+		System.out.println("第二次修改");
+		System.out.println("第三次修改");
 		if ("admin".equals(userName) && userPwd == 123) {
 			session.setAttribute("USER", new Users(userName, userPwd));
 			message.put("code", "200");
